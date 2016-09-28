@@ -13,7 +13,8 @@
 ## Demo 预览
 
 <p align="center">
-  <img src="./assets/1.png" alt="weapp-CNode演示" width="30%">
-  <img src="./assets/2.png" alt="weapp-CNode演示" width="30%">
-  <img src="./assets/3.png" alt="weapp-CNode演示" width="30%">
+  <img src="assets/1.png" alt="weapp-CNode演示" width="24%">
+  <img src="assets/2.png" alt="weapp-CNode演示" width="24%">
+  <img src="assets/3.png" alt="weapp-CNode演示" width="24%">
+  <img src="assets/4.png" alt="weapp-CNode演示" width="24.5%">
 </p>
