@@ -1,0 +1,6 @@
+<import src="../../components/list/list.wxml" />
+
+<view class="container">
+    <loading hidden="{{ hidden }}">加载中...</loading>
+    <template is="list" data="{{ list }}"></template>
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/essence/essence",
+    "pages/detail/detail",
+    "pages/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#444",
+    "navigationBarTitleText": "CNode",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color": "#ccc",
+    "selectedColor": "#3098eb",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/homeHL.png"
+    }, {
+      "pagePath": "pages/essence/essence",
+      "text": "精华",
+      "iconPath": "image/essence.png",
+      "selectedIconPath": "image/essenceHL.png"
+    }, {
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "image/about.png",
+      "selectedIconPath": "image/aboutHL.png"
+    }]
+  }
+}

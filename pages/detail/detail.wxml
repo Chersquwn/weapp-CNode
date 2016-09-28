@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="article">
+        <text class="article_title">{{ article.title }}</text>
+        <view class="article_info">
+            <image class="avatar" src="{{ article.author.avatar_url }}"></image>
+            <view class="info">
+                <view class="avatar_info">
+                    <text class="name">{{ article.author.loginname }}</text>
+                    <text class="time">发布于: {{ article.create_at }}</text>
+                </view>
+                <view class="browe_info">
+                    <text class="page_view">{{ article.visit_count }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="article_content">
+            <text>{{ article.content }}</text>
+        </view>
+        <view class="article_comment">
+            <text class="article_comment_title">评论</text>
+            <view class="article_comment_item" wx:for="{{ article.replies }}" wx:for-item="reply">
+                <view class="article_comment_info">
+                    <image class="avatar" src="{{ reply.author.avatar_url }}"></image>
+                    <view class="avatar_info">
+                        <text class="name">{{ reply.author.loginname }}</text>
+                        <text class="time">发布于: {{ reply.create_at }}</text>
+                    </view>
+                </view>
+                <text class="comment_content">{{ reply.content }}</text>
+            </view>
+        </view>
+    </view>
+</view>

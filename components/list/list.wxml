@@ -1,0 +1,22 @@
+<template name="list">
+    <scroll-view class="list" bindscrolltolower="scrolltolower" scroll-y style="height: 100%;">
+        <navigator class="list_item" hover-class="list_navigator_hover" wx:for-items="{{ list }}" wx:for-item="item" url="/pages/detail/detail?id={{ item.id }}">
+            <view class="list_item_container">
+                <text class="list_item_title {{ item.tab }}">{{ item.title }}</text>
+                <view class="list_item_content">
+                    <image class="avatar" src="{{ item.author.avatar_url }}"></image>
+                    <view class="info">
+                        <view class="avatar_info">
+                            <text class="name">{{ item.author.loginname }}</text>
+                            <text class="time">{{ item.create_at }}</text>
+                        </view>
+                        <view class="browe_info">
+                            <text class="page_view">{{ item.reply_count }}/{{ item.visit_count }}</text>
+                            <text class="time">{{ item.last_reply_at }}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+    </scroll-view>
+</template>
